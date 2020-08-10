@@ -36,3 +36,4 @@ List all the user stories (acceptance criterias) in the app.
 - **Notes**
   - Validate will only be trigger once I stop typing 2s
   - The valid email must not be empty and belong to **pycogroup** domain (**@pycogroup** as suffix)
+  - The OTP valid: faked by the **InputEmail** screen pass to.
