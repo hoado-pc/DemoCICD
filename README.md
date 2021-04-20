@@ -19,9 +19,4 @@ This repository will help developers to review his skills in a simple use case.
 ![User Case Passwordless](Passwordless-authentication.png)
 
 ## Rules
-
-- Each developer creates a [git](https://git-scm.com/docs) branch follow the rule: `platform/name` (ex: android/nguyenvana, iOS/tranvanb).
-- Coding Convention
-  - Android: [Kotlin's convention](https://kotlinlang.org/docs/reference/coding-conventions.html)
-  - iOS: [Swift's convention](https://github.com/raywenderlich/swift-style-guide#lazy-initialization)
-- Commit's convention [KARMA](http://karma-runner.github.io/3.0/dev/git-commit-msg.html).
+- Follow the contributor rules: https://github.com/PYCOGROUP-VN/README
