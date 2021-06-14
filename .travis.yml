@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode12.4
 xcode_workspace: DemoCICD.xcworkspace
 xcode_scheme: DemoCICD-QC
-xcode_destination: platform=iOS Simulator,OS=14.4,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=14.4,name=iPhone 11 Pro
 before_install:
   - bundle install
   - bundle exec pod install --repo-update
