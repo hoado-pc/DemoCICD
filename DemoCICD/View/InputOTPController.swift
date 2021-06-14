@@ -16,6 +16,7 @@ final class InputOTPController: UIViewController {
     @IBOutlet weak var submitBtn: UIButton!
     private let inputOTPVM: InputOTPViewModel = InputOTPViewModel()
     private let disposeBag = DisposeBag()
+    
     var mockOTP: String!
     
     override func viewDidLoad() {
