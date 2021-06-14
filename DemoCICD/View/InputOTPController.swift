@@ -17,11 +17,13 @@ final class InputOTPController: UIViewController {
     private let inputOTPVM: InputOTPViewModel = InputOTPViewModel()
     private let disposeBag = DisposeBag()
     
+    
     var mockOTP: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         _setBtnEnability(isEnable: false)
+        
         setupBindings()
     }
     
