@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class InputOTPController: UIViewController {
+final class InputOTPController: UIViewController {
 
     @IBOutlet weak var otpTextfield: UITextField!
     @IBOutlet weak var submitBtn: UIButton!
