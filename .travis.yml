@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode12.4
 xcode_workspace: DemoCICD.xcworkspace
-xcode_scheme: TDemoCICD-QC
+xcode_scheme: DemoCICD-QC
 xcode_destination: platform=iOS Simulator,OS=14.4,name=iPhone X
 before_install:
   - bundle install
