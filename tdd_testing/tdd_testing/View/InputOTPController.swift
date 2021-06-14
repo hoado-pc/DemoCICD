@@ -31,15 +31,15 @@ class InputOTPController: UIViewController {
     func setupBindings(){
        otpTextfield.rx.text
          .debounce(.seconds(2), scheduler: MainScheduler.instance)
-         .subscribe(onNext: { text in
-            self.inputOTPVM.checkOTP(text!, mockOTP: self.mockOTP)
+         .subscribe(onNext: { [weak self] text in
+            self?.inputOTPVM.checkOTP(text!, mockOTP: self?.mockOTP ?? "")
          })
          .disposed(by: disposeBag)
 
        inputOTPVM.isValidOTP
          .observeOn(MainScheduler.instance)
-         .subscribe(onNext: {(value) in
-             self._setBtnEnability(isEnable: value)
+         .subscribe(onNext: { [weak self] (value) in
+             self?._setBtnEnability(isEnable: value)
          }).disposed(by: disposeBag)
    }
     

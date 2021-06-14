@@ -30,15 +30,15 @@ final class InputEmailController: UIViewController {
     func setupBindings(){
         emailTextfield.rx.text
           .debounce(.seconds(2), scheduler: MainScheduler.instance)
-          .subscribe(onNext: { text in
-              self.inputEmailVM?.checkEmail(text!)
+          .subscribe(onNext: { [weak self] text in
+              self?.inputEmailVM?.checkEmail(text!)
           })
           .disposed(by: disposeBag)
 
         inputEmailVM?.isValidEmail
           .observeOn(MainScheduler.instance)
-          .subscribe(onNext: {(value) in
-              self._setBtnEnability(isEnable: value)
+          .subscribe(onNext: {[weak self] (value) in
+              self?._setBtnEnability(isEnable: value)
           }).disposed(by: disposeBag)
     }
     
