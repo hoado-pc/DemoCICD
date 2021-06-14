@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import tdd_testing
+@testable import DemoCICD
 
 class InputEmailViewModelTests: XCTestCase {
     

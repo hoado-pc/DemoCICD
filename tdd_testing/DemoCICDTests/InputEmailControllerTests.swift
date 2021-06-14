@@ -10,7 +10,7 @@ import XCTest
 import RxTest
 import RxSwift
 import RxCocoa
-@testable import tdd_testing
+@testable import DemoCICD
 
 class InputEmailControllerTests: XCTestCase {
     
