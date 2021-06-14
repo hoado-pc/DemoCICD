@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14431F7A2677A7D300D126C0 /* QC.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 14431F792677A7D300D126C0 /* QC.xcconfig */; };
 		14431F802677A7F300D126C0 /* STAG.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 14431F7F2677A7F300D126C0 /* STAG.xcconfig */; };
+		1492DB692677F160009D4BCF /* QC.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1492DB682677F160009D4BCF /* QC.xcconfig */; };
 		404079C524EEC99C005EB237 /* InputEmailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404079C424EEC99C005EB237 /* InputEmailViewModelTests.swift */; };
 		404079C724EECD7C005EB237 /* InputEmailControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404079C624EECD7C005EB237 /* InputEmailControllerTests.swift */; };
 		40B282F724EC244A003BB614 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 40B282F624EC244A003BB614 /* Podfile */; };
@@ -40,9 +40,9 @@
 		08EBD37CF13D5D351C24A0EC /* Pods-DemoCICDTests.stag.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCICDTests.stag.xcconfig"; path = "Target Support Files/Pods-DemoCICDTests/Pods-DemoCICDTests.stag.xcconfig"; sourceTree = "<group>"; };
 		0EFEE28D83ED8D9FD08873FD /* Pods_DemoCICD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCICD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E1FDAA2E0C3AFE05C7EAAA /* Pods-tdd_testingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd_testingTests.debug.xcconfig"; path = "Target Support Files/Pods-tdd_testingTests/Pods-tdd_testingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		14431F792677A7D300D126C0 /* QC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QC.xcconfig; sourceTree = "<group>"; };
 		14431F7F2677A7F300D126C0 /* STAG.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = STAG.xcconfig; sourceTree = "<group>"; };
 		14431FD42677B1FF00D126C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1492DB682677F160009D4BCF /* QC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QC.xcconfig; sourceTree = "<group>"; };
 		212DABA699294846C253FBDE /* Pods-DemoCICDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCICDTests.release.xcconfig"; path = "Target Support Files/Pods-DemoCICDTests/Pods-DemoCICDTests.release.xcconfig"; sourceTree = "<group>"; };
 		28F5F724286907E4D5330E81 /* Pods-tdd_testingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdd_testingTests.release.xcconfig"; path = "Target Support Files/Pods-tdd_testingTests/Pods-tdd_testingTests.release.xcconfig"; sourceTree = "<group>"; };
 		404079C424EEC99C005EB237 /* InputEmailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEmailViewModelTests.swift; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		14431F782677A7B600D126C0 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				14431F792677A7D300D126C0 /* QC.xcconfig */,
 				14431F7F2677A7F300D126C0 /* STAG.xcconfig */,
+				1492DB682677F160009D4BCF /* QC.xcconfig */,
 			);
 			path = Environments;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 			files = (
 				40DF4E0C24E1A594002C1D73 /* LaunchScreen.storyboard in Resources */,
 				40DF4E0924E1A594002C1D73 /* Assets.xcassets in Resources */,
-				14431F7A2677A7D300D126C0 /* QC.xcconfig in Resources */,
+				1492DB692677F160009D4BCF /* QC.xcconfig in Resources */,
 				14431F802677A7F300D126C0 /* STAG.xcconfig in Resources */,
 				40B282F724EC244A003BB614 /* Podfile in Resources */,
 				40DF4E0724E1A592002C1D73 /* Main.storyboard in Resources */,
@@ -435,7 +435,6 @@
 /* Begin XCBuildConfiguration section */
 		14431F852677A9EC00D126C0 /* QC */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14431F792677A7D300D126C0 /* QC.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
