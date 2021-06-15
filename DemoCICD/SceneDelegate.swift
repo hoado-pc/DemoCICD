@@ -21,6 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = window?.rootViewController as? UINavigationController
         let inputEmailVC = navigationController?.topViewController as? InputEmailController
         inputEmailVC?.inputEmailVM = InputEmailViewModel()
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
