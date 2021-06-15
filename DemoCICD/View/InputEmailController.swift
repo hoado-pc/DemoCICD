@@ -19,7 +19,7 @@ final class InputEmailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _setBtnEnability(isEnable: false)
+        setBtnEnability(isEnable: false)
         setupBindings()
     }
     
@@ -38,11 +38,11 @@ final class InputEmailController: UIViewController {
         inputEmailVM?.isValidEmail
           .observeOn(MainScheduler.instance)
           .subscribe(onNext: {[weak self] (value) in
-              self?._setBtnEnability(isEnable: value)
+              self?.setBtnEnability(isEnable: value)
           }).disposed(by: disposeBag)
     }
     
-    func _setBtnEnability(isEnable: Bool = true) {
+    func setBtnEnability(isEnable: Bool = true) {
         submitBtn.isEnabled = isEnable
         submitBtn.alpha = isEnable ? 1 : 0.8
     }
