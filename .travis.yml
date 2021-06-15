@@ -17,3 +17,8 @@ install:
   - set -o pipefail
   - sudo systemsetup -settimezone Asia/Ho_Chi_Minh
   - bundle install --path=vendor/bundle --jobs 4 --retry 3
+before_script:
+  - chmod a+x ./scripts/add-key.sh
+  - sh ./scripts/add-key.sh
+script:
+  - bundle exec fastlane build
