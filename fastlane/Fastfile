@@ -55,7 +55,7 @@ platform :ios do
     )
     update_project_provisioning(
       xcodeproj: "DemoCICD.xcodeproj",
-      profile: "./scripts/profiles/cicd_qc.mobileprovision",
+      profile: "./scripts/certs/profiles/cicd_qc.mobileprovision",
       target_filter: "DemoCICD",
       build_configuration: "QC",
     )
