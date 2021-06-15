@@ -45,6 +45,10 @@ final class InputEmailController: UIViewController {
     func _setBtnEnability(isEnable: Bool = true) {
         submitBtn.isEnabled = isEnable
         submitBtn.alpha = isEnable ? 1 : 0.8
+        
+        
+        
+        
     }
     
     @IBAction func navigateToOTPScreen(_ sender: Any) {
