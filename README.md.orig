@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SimpleUseCase
 
 This repository will help developers to review his skills in a simple use case.
@@ -20,3 +21,7 @@ This repository will help developers to review his skills in a simple use case.
 
 ## Rules
 - Follow the contributor rules: https://github.com/PYCOGROUP-VN/README
+=======
+# DemoCICD
+Demo CICD with TravisCI
+>>>>>>> Initial commit

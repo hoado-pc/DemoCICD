@@ -1,0 +1,14 @@
+//
+//  QC.xcconfig
+//  DemoCICD
+//
+//  Created by HuntDo on 14/06/2021.
+//  Copyright © 2021 Tran Thien Hao. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BUNDLE_ID = com.visa.collabsg.highjumpqc
+APP_ICON = AppIconQC
+APP_NAME = CICD QC
+APP_VERSION = 0.1
