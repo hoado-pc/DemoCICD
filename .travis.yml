@@ -3,6 +3,10 @@ osx_image: xcode12.4
 cache:
   - bundler
   - cocoapods
+branches:
+  only:
+  - gh-pages
+  - /.*/
 xcode_workspace: DemoCICD.xcworkspace
 xcode_scheme: DemoCICD-QC
 xcode_destination: platform=iOS Simulator,OS=14.4,name=iPhone 11 Pro
