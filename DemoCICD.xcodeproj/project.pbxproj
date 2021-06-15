@@ -262,6 +262,7 @@
 			buildConfigurationList = 40DF4E1B24E1A594002C1D73 /* Build configuration list for PBXNativeTarget "DemoCICD" */;
 			buildPhases = (
 				57F1B19EF35B2E697300C544 /* [CP] Check Pods Manifest.lock */,
+				1462C3DD26788A0D00BAEFD5 /* Run Script - SwiftLint */,
 				40DF4DF824E1A592002C1D73 /* Sources */,
 				40DF4DF924E1A592002C1D73 /* Frameworks */,
 				40DF4DFA24E1A592002C1D73 /* Resources */,
@@ -370,6 +371,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1462C3DD26788A0D00BAEFD5 /* Run Script - SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		57F1B19EF35B2E697300C544 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

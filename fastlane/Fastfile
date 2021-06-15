@@ -1,0 +1,80 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Try to test app"
+  lane :test_lane do
+    run_tests(scheme: "DemoCICDTests")
+  end
+  
+  desc "Build App in local"
+  lane :build_local do
+    make_build_folder
+    build_ios_app(
+      scheme: "DemoCICD", 
+      workspace: "DemoCICD.xcworkspace",
+      configuration: "QC", 
+      output_directory: "./build",
+      output_name: "DemoCICD_Dev.ipa",
+      silent: true,
+      clean: true,
+      export_method: "development"
+    )
+   end
+
+  desc "Make build Folder"
+  private_lane :make_build_folder do
+    sh "mkdir -p ./build"
+  end
+
+  desc "Build App"
+  lane :build do
+    make_build_folder
+    disable_automatic_code_signing(
+      path: "DemoCICD.xcodeproj"
+    )
+    import_certificate(
+      keychain_name: "ios-build.keychain",
+      keychain_password: "travis",
+      certificate_path: "./scripts/certs/qc.p12",
+      certificate_password: "Highjump1@"
+    )
+    update_project_provisioning(
+      xcodeproj: "DemoCICD.xcodeproj",
+      profile: "./scripts/certs/profiles/cicd_qc.mobileprovision",
+      target_filter: "DemoCICD",
+      build_configuration: "QC",
+    )
+    build_ios_app(
+      scheme: "DemoCICD-QC", 
+      workspace: "DemoCICD.xcworkspace",
+      configuration: "QC", 
+      export_method: "development",
+      output_directory: "./build",
+      silent: true,
+      clean: true,
+      skip_profile_detection: true,
+      export_options: {
+        provisioningProfiles: { "com.visa.collabsg.highjumpqc": "VisaGo-QC" }
+      }
+    )
+    enable_automatic_code_signing(
+      path: "DemoCICD.xcodeproj"
+    )
+  end
+
+end
