@@ -31,7 +31,7 @@ platform :ios do
       output_directory: "./build",
       output_name: "DemoCICD_Dev.ipa",
       silent: true,
-      clean: true
+      clean: true,
       export_method: "development"
     )
    end
